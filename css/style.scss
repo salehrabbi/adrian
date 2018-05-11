@@ -56,7 +56,8 @@ p {
 
 .main-header {
     padding-bottom: 2px;
-    background: #fab637;
+    background: #fff;
+    box-shadow: 0 0 8px;
     padding-top: 7px;
     transition: .5s;
     position: relative;
@@ -69,12 +70,12 @@ p {
         margin-top: 36px;
     }
     .navbar-nav > li > a {
-        color: #fff;
+        color: #515151;
         font-size: 14px;
         font-weight: 500;
         &:hover,
         &:focus {
-            color: #333333;
+            color: #00B0FF;
         }
     }
     .navbar-brand {
@@ -87,7 +88,7 @@ p {
             margin: 0;
             font-size: 26px;
             span {
-                color: #fff;
+                color: #00B0FF;
             }
         }
         p {
@@ -104,7 +105,7 @@ p {
         font-size: 16px;
         font-weight: 500;
         z-index: 2;
-        color: #fff;
+        color: #00B0FF;
         span,
         a {
             color: #333333;
@@ -203,41 +204,52 @@ p {
     }
 }
 
+.navbar-default .navbar-toggle {
+    border-color: #00B0FF;
+}
 
 /*====================== banner ========================*/
 
-.banner {
-    background: url(../images/Pic1.jpg) no-repeat;
-    background-size: cover;
-    min-height: 640px;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 40px;
-    .item {
-        background-color: rgba(42, 42, 42, 0.9);
-        max-width: 353px;
-        margin-left: auto;
-        color: #fff;
-        padding: 30px 30px 20px 30px;
-        border-radius: 20px 20px 20px 0;
+.banner-adrian {
+    border-bottom: 1px solid #bebebe;
+    padding: 80px 0;
+    padding-top: 70px;
+    h1 {
+        font-family: $s;
+        font-size: 39px;
+        line-height: (47/39);
+        margin: 0;
+        margin-bottom: 55px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .right {
+        margin-top: 11px;
+        padding-left: (90px-25);
         img {
-            height: 45px;
-            margin-bottom: 25px;
+            width: 100%;
+            border-radius: 5px;
         }
-        h1 {
-            margin: 0;
-            font-weight: 700;
-            font-size: 24px;
-        }
-        a.btn {
-            background: #ffba34;
+        .btn {
+            display: block;
+            background: #01c854;
             color: #fff;
-            font-size: 21px;
-            margin: 15px 0;
-            padding: 4px 20px;
+            border-radius: 50px;
+            font-size: 18px;
+            text-align: center;
+            padding: 4px 12px;
+            margin: 17px 0;
         }
-        p {
+        h4 {
+            margin: 0;
+            text-align: center;
             font-size: 16px;
+            a {
+                color: #00C853;
+            }
         }
     }
 }
@@ -260,6 +272,14 @@ p {
             max-width: 100%;
         }
     }
+    .detailes {
+        font-size: 20px;
+        font-style: italic;
+        margin-top: 50px;
+        a {
+            color: #00C853;
+        }
+    }
 }
 
 /*====================== Education ========================*/
@@ -268,7 +288,7 @@ p {
     background: #f6f6f6;
     padding: 60px 0 40px 0;
     .item {
-        max-width: 300px;
+        max-width: 333px;
         display: flex;
         align-items: center;
         flex-flow: row wrap;
@@ -286,8 +306,14 @@ p {
             border-left: 1px solid #b7b7b7;
             padding: 5px 0;
             padding-left: 45px;
+            font-size: 12px;
+            min-height: 81px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
             b {
                 display: block;
+                font-size: 14px;
             }
         }
     }
@@ -422,7 +448,7 @@ p {
         .item {
             margin-left: auto;
             &:first-child {
-                margin-top: 35px;
+                margin-top: 97px;
             }
 
         }
@@ -440,7 +466,7 @@ p {
 /*====================== benifits ========================*/
 
 .benifits {
-    background: #ffbb34;
+    background: #01b0ff;
     color: #fff;
     h3 {
         margin: 0;
@@ -474,20 +500,8 @@ p {
 /*====================== about-us ========================*/
 
 .about-us {
-    position: relative;
-    .about-bg {
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        left: 0;
-        top: 0;
-        background: url(../images/About.jpeg) no-repeat;
-        background-size: cover;
-        z-index: 2;
-    }
     .item {
         align-items: center;
-        padding-left: 35px;
         p {
             font-size: 16px;
             line-height: (44/37);
@@ -510,7 +524,7 @@ p {
         }
         i {
             font-size: 30px;
-            color: #fabc29;
+            color: #01b0ff;
             vertical-align: middle;
             margin-right: 20px;
         }
@@ -519,8 +533,7 @@ p {
 
 
 .copy {
-    font-size: 16px;
-    color: #FFBB34;
+    font-size: 16px; //    color: #FFBB34;
     border-top: 1px solid #FFBB34;
     text-align: center;
     margin: 0 auto;
@@ -571,7 +584,7 @@ p {
     }
 
     .navbar-default .navbar-toggle .icon-bar {
-        background-color: #fff;
+        background-color: #00B0FF;
     }
 
     .about-us .item p {
@@ -597,6 +610,17 @@ p {
         .date {
             font-size: 20px;
         }
+    }
+
+
+    .banner-adrian p {
+        font-size: 18px;
+    }
+    .banner-adrian h1 {
+        font-size: 27px;
+    }
+    .banner-adrian .right {
+        padding-left: 0;
     }
 }
 
@@ -643,10 +667,9 @@ p {
     }
     .patner h3 {
         font-size: 28px;
-    }
-    .banner {
-        min-height: 500px;
-    }
+    } //    .banner {
+    //        min-height: 500px;
+    //    }
     .education .item.right {
         margin-left: 0;
     }
@@ -672,21 +695,25 @@ p {
     }
     .time-line .time-item-right .item {
         margin-left: 0;
-    }
-    .about-us .about-bg {
-        position: static;
-        width: 100%;
-        height: 350px;
-        margin-bottom: 60px;
-    }
-    .about-us {
-        padding-top: 0;
-    }
+    } //    .about-us .about-bg {
+    //        position: static;
+    //        width: 100%;
+    //        height: 350px;
+    //        margin-bottom: 60px;
+    //    }
+    //    .about-us {
+    //        padding-top: 0;
+    //    }
     .section-head.text-right {
         text-align: left;
+    } //    .about-us .item {
+    //        padding-left: 15px;
+    //    }
+    .banner-adrian .right {
+        padding-top: 50px;
     }
-    .about-us .item {
-        padding-left: 15px;
+    .time-line .time-item-right .item:first-child {
+        margin-top: 55px;
     }
 }
 
@@ -715,6 +742,9 @@ p {
     .time-line .item {
         max-width: 100%;
         margin-bottom: 30px;
+    }
+    .patner .detailes {
+        font-size: 16px;
     }
 }
 
@@ -754,14 +784,16 @@ p {
     }
     .main-header .navbar-brand {
         padding-top: 13px;
-    }
-    .banner .item h1 {
-        font-size: 20px;
-    }
-    .banner .item p {
-        font-size: 14px;
-    }
+    } //    .banner .item h1 {
+    //        font-size: 20px;
+    //    }
+    //    .banner .item p {
+    //        font-size: 14px;
+    //    }
     .service .table tr > td img {
-	width: 20px;
-}
+        width: 20px;
+    }
+    .banner-adrian h1 {
+        font-size: 25px;
+    }
 }
