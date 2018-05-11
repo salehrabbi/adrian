@@ -70,7 +70,7 @@ p {
     height: auto;
     font-family: 'Arial';
     padding-left: 0;
-    color: #333333;
+    color: #515151;
     padding-top: 26px; }
     .main-header .navbar-brand h1 {
       margin: 0;
@@ -186,10 +186,10 @@ p {
     font-size: 39px;
     line-height: 1.2051282051;
     margin: 0;
-    margin-bottom: 55px; }
+    margin-bottom: 46px; }
   .banner-adrian p {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 1.2; }
   .banner-adrian .right {
     margin-top: 11px;
@@ -220,8 +220,7 @@ p {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   line-height: 1.2352941176;
-  margin-bottom: 10px;
-  color: #1C1C1C; }
+  margin-bottom: 10px; }
 .patner .item {
   padding: 20px 0; }
   .patner .item img {
