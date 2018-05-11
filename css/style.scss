@@ -108,7 +108,7 @@ p {
         color: #00B0FF;
         span,
         a {
-            color: #333333;
+            color: #515151;
         }
     }
 }
@@ -394,6 +394,12 @@ p {
         max-width: 370px;
         box-shadow: 0 0 8px rgba(0, 0, 0, .5);
         position: relative;
+        a{
+            color: #515151;
+            &:hover{
+                color: #00B0FF;
+            }
+        }
         .bg {
             background: #fff;
             border-top: 4px solid #ffbd34;

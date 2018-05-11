@@ -92,7 +92,7 @@ p {
     color: #00B0FF; }
     .main-header .address span,
     .main-header .address a {
-      color: #333333; }
+      color: #515151; }
 
 .main-header.navbar-fixed-top {
   padding-bottom: 0;
@@ -334,6 +334,10 @@ p {
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     position: relative; }
+    .time-line .item a {
+      color: #515151; }
+      .time-line .item a:hover {
+        color: #00B0FF; }
     .time-line .item .bg {
       background: #fff;
       border-top: 4px solid #ffbd34;
